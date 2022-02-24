@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: af8ef8c053d95864fb08409e4e486b83, type: 3}
-  m_Name: RedSquare
+  m_Name: GreenCapsule
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
-  color: {r: 0, g: 0, b: 0, a: 0}
+  sprite: {fileID: -9095717837082945937, guid: 438706273c27a73418cbfe82dca7ae85, type: 3}
+  color: {r: 0, g: 1, b: 0.06795335, a: 1}
