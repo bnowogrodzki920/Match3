@@ -7,6 +7,8 @@ namespace Grid
     {
         [SerializeField]
         private GridController.Settings settings;
+        [SerializeField]
+        private GridView gridView;
 
         public override void InstallBindings()
         {
@@ -15,7 +17,9 @@ namespace Grid
 
         private void InstallSystem(DiContainer subContainer)
         {
-
+            subContainer.Bind<IGridController>().To<GridController>().FromNew().AsSingle();
+            subContainer.Bind<IGridView>().FromInstance(gridView).AsSingle();
+            subContainer.Bind<GridController.Settings>().FromInstance(settings).AsSingle();
         }
     }
 }
